@@ -1,0 +1,32 @@
+vertical-menu {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  
+  .vertical-menu a {
+    background-color: black;
+    color: white;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+  }
+  
+  .vertical-menu a:hover {
+    background-color: #ccc;
+  }
+  
+  .vertical-menu a.active {
+    background-color: black;
+    color: white;
+  }
+  
+  h1{
+    color: #e6e600;
+  }
+  
+  body {
+    background-color: #04AA6D;
+  }

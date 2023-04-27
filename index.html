@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body onload="exibirNome()">
+
+<h1>Vinicius Viana</h1>
+<button id="horaAtualBtn">Clique aqui para ver a hora atual</button>
+
+<div class="vertical-menu">
+  <a href="https://instagram.com/cainelles__?igshid=YmMyMTA2M2Y=" class="active">Instagram</a>
+  <a href="https://www.w3schools.com/">W3schools</a>
+  <a href="https://www.youtube.com/">Youtube</a>
+  <a href="https://krunker.io/">Krunker</a>
+  <a href="https://github.com/">Github</a>
+</div>
+<script>
+  function exibirNome() {
+    alert("Vinicius de Paula Viana");
+  }
+  
+  // seleciona o botão e adiciona um ouvinte de evento de clique
+  const horaAtualBtn = document.querySelector("#horaAtualBtn");
+  horaAtualBtn.addEventListener("click", mostrarHoraAtual);
+
+  // função que mostra a hora atual
+  function mostrarHoraAtual() {
+    const agora = new Date();
+    const hora = agora.getHours();
+    const minutos = agora.getMinutes();
+    const segundos = agora.getSeconds();
+    const horaFormatada = `${hora}:${minutos}:${segundos}`;
+    alert(`Tome as horas ai meu rei: ${horaFormatada}`);
+  }
+</script>
+
+</head>
+<body>
+
+</body>
+</html>
